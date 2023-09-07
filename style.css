@@ -33,7 +33,6 @@
 /***** Size variables *****/
 :root {
   --body-max-width: 144rem;
-  --container-max-width: 128rem;
 }
 
 /* ----- Reset CSS ----- */
@@ -107,7 +106,7 @@ body {
 header,
 main,
 footer {
-  max-width: var(--body--max-width);
+  max-width: var(--body-max-width);
   margin-inline: auto;
 }
 
@@ -207,6 +206,103 @@ footer {
   max-width: 3.6rem;
 }
 
+/* =============== nav bar =============== */
+
+.header-section {
+  padding: 2rem 4.375rem 4.75rem 8.4375rem;
+}
+
+.nav-parimary {
+  max-width: 116.8rem;
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-parimary li {
+  padding: 2.44rem;
+  display: inline;
+}
+
+.nav-parimary__link {
+  color: #f55253;
+  font-size: var(--font-18px);
+  font-weight: var(--font-medium);
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar__form {
+  position: relative;
+}
+
+.search-bar__input {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 1.5rem 4rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-bar__input:focus {
+  outline: none;
+}
+
+.search-bar__input::placeholder {
+  color: #232323;
+}
+
+.search-bar__button {
+  outline: none;
+  border: none;
+  left: 8px;
+  top: 1.5rem;
+  width: 2rem;
+  background: transparent;
+  position: absolute;
+}
+
+.search-bar__icon {
+  font-size: var(--font-12px);
+  color: #8b8b8b;
+}
+
+.search-bar__form::after {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 3.5rem;
+  top: 0.5rem;
+  background: #f2f2f2;
+  right: 5rem;
+}
+
+.shop {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.3rem;
+}
+
+.shop__icon {
+  font-size: var(--font-16px);
+  color: #232323;
+}
+
+.shop__item-value {
+  position: absolute;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: -6px 9px 24px rgba(238, 67, 67, 0.68);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 0.3rem;
+  top: -2.5rem;
+  right: -2rem;
+}
 /* =============== features section =============== */
 
 .feature {

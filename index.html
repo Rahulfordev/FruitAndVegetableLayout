@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout Design</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
+    <header class="header-section">
+      <nav class="nav-parimary">
+        <div class="nav-parimary__logo">
+          <img src="image/logo.png" alt="logo" />
+        </div>
+        <ul class="nav-parimary__links">
+          <li><a class="nav-parimary__link" href="#">Home</a></li>
+          <li><a class="nav-parimary__link" href="#">Menu</a></li>
+          <li><a class="nav-parimary__link" href="#">Serivce</a></li>
+          <li><a class="nav-parimary__link" href="#">Shop</a></li>
+        </ul>
+        <div class="search-bar">
+          <form action="" class="search-bar__form">
+            <input
+              class="search-bar__input"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="search-bar__button">
+              <i class="search-bar__icon fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <div class="shop">
+            <i class="shop__icon fa-solid fa-shop"></i>
+            <span class="shop__item-value">2</span>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <button id="changeColorButton" class="btn">button</button>
       <section class="features">
         <div class="feature">
           <div class="feature__image-box">
@@ -20,8 +53,8 @@
               </div>
               <img
                 class="price-card__image"
-                src="image/orange.png"
-                alt="orange"
+                src="image/lychee.png"
+                alt="lychee"
               />
               <div class="rating">
                 <img
