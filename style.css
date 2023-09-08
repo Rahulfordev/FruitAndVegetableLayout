@@ -206,11 +206,13 @@ footer {
   max-width: 3.6rem;
 }
 
-/* =============== nav bar =============== */
+/* =============== header section =============== */
 
 .header-section {
   padding: 2rem 4.375rem 4.75rem 8.4375rem;
 }
+
+/* ========= nav bar ========= */
 
 .nav-parimary {
   max-width: 116.8rem;
@@ -222,13 +224,30 @@ footer {
 
 .nav-parimary li {
   padding: 2.44rem;
-  display: inline;
+  display: inline-block;
 }
 
 .nav-parimary__link {
   color: #f55253;
   font-size: var(--font-18px);
   font-weight: var(--font-medium);
+}
+
+.nav-parimary__link::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.nav-parimary__link:hover::after,
+.nav-parimary__link.active::after {
+  width: 100%;
+  background: var(--color-primary);
 }
 
 .search-bar {
@@ -240,7 +259,7 @@ footer {
 }
 
 .search-bar__input {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.16);
   padding: 1.5rem 4rem;
   border: none;
   border-radius: 10px;
@@ -303,6 +322,9 @@ footer {
   top: -2.5rem;
   right: -2rem;
 }
+
+/* ========= hero section ========= */
+
 /* =============== features section =============== */
 
 .feature {

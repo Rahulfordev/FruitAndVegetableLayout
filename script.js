@@ -1,10 +1,10 @@
-function changeh2Color() {
-  var h2Elements = document.querySelectorAll("h2");
+var navParimary = document.getElementById("nav-parimary");
+var navParimaryLink = navParimary.getElementsByClassName("nav-parimary__link");
 
-  for (i = 0; i < h2Elements.length; i++) {
-    h2Elements[i].style.color = "white";
-    document.body.style.backgroundColor = "black";
-  }
+for (let i = 0; i < navParimaryLink.length; i++) {
+  navParimaryLink[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
-var changeBgColor = document.getElementById("changeColorButton");
-changeBgColor.addEventListener("click", changeh2Color);
