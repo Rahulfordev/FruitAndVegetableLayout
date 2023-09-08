@@ -563,3 +563,52 @@ footer {
     display: none;
   }
 }
+
+/* ========== mobile app section ========== */
+
+.feature--mobile-app {
+  max-width: 100%;
+  height: 47.1875rem;
+  justify-content: center;
+  gap: 11.5rem;
+  background: #fef5f5;
+}
+
+/* ==== image section ==== */
+
+.feature__image-box--2 .feature__image {
+  max-width: 17.26688rem;
+  height: 34.79rem;
+}
+
+/* ==== content section ==== */
+
+.feature__content--2 {
+  max-width: 44.4rem;
+}
+
+.feature__content--2 .feature__description {
+  width: 47rem;
+}
+
+.feature__content--2 .hero__button .btn--primary {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid #e6d7d7;
+  max-width: 14rem;
+}
+
+.feature__content--2 .hero__button .btn--primary i {
+  margin-right: 5px;
+}
+
+.feature__content--2 .hero__button .btn--primary .fa-android {
+  font-size: var(--font-22px);
+}
+
+.feature__content--2 .hero__button .btn--primary .fa-apple {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: 6px;
+  border-radius: 5px;
+}
