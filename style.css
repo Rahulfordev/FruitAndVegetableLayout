@@ -11,6 +11,7 @@
   --color-light-gray: #676767;
   --color-light-green: #03a66b;
   --color-light-yellow: #f9ba45;
+  --color-bg-secondary: #fef5f5;
 }
 
 /***** Font variables *****/
@@ -339,16 +340,23 @@ footer {
 
 .header-section__hero {
   flex-direction: row-reverse;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .hero__content {
   max-width: 36rem;
   margin-top: 20rem;
+  @media (max-width: 1100px) {
+    margin-top: 0;
+  }
 }
 
 .btn--thirdly {
   position: relative;
-  display: flex;
+  display: inline-flex;
   background: rgb(253, 236, 236);
   color: var(--color-primary);
   max-width: 20rem;
@@ -363,6 +371,9 @@ footer {
   position: absolute;
   left: 70%;
   bottom: -39%;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .hero__title {
@@ -425,6 +436,9 @@ footer {
   flex-direction: column-reverse;
   top: 8rem;
   left: -14rem;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .price-card--1::after {
@@ -468,6 +482,12 @@ footer {
 .price-card__shopping i {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
+}
+
+/* =============== delivery shipping =============== */
+
+.feature--delivery-shipping {
+  background: var(--color-bg-secondary);
 }
 
 /* =============== features section =============== */
@@ -571,7 +591,12 @@ footer {
   height: 47.1875rem;
   justify-content: center;
   gap: 11.5rem;
-  background: #fef5f5;
+  background: var(--color-bg-secondary);
+  @media (max-width: 1100px) {
+    height: auto;
+    gap: 1rem;
+    align-items: center;
+  }
 }
 
 /* ==== image section ==== */
@@ -589,6 +614,12 @@ footer {
 
 .feature__content--2 .feature__description {
   width: 47rem;
+}
+
+.feature__content--2 .hero__button {
+  @media (max-width: 1100px) {
+    display: inline;
+  }
 }
 
 .feature__content--2 .hero__button .btn--primary {
