@@ -484,12 +484,6 @@ footer {
   font-size: 1.5rem;
 }
 
-/* =============== delivery shipping =============== */
-
-.feature--delivery-shipping {
-  background: var(--color-bg-secondary);
-}
-
 /* =============== features section =============== */
 
 .feature {
@@ -504,6 +498,27 @@ footer {
     text-align: center;
   }
 }
+
+/* =============== delivery shipping =============== */
+
+.feature--delivery-shipping {
+  max-width: 100%;
+  min-height: 47rem;
+  display: block;
+  background: var(--color-bg-secondary);
+}
+
+.delivery__content {
+  text-align: center;
+}
+
+.delivery__card {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* =============== features section =============== */
 
 .feature__image-box {
   position: relative;
