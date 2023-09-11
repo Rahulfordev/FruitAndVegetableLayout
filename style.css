@@ -534,6 +534,11 @@ footer {
   gap: 4rem;
   padding-top: 2rem;
   justify-content: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 2rem;
+  }
 }
 
 .card {
@@ -657,6 +662,7 @@ footer {
   justify-content: center;
   gap: 11.5rem;
   background: var(--color-bg-secondary);
+  margin-block: 5.2rem 10.2rem;
   @media (max-width: 1100px) {
     height: auto;
     gap: 1rem;
@@ -707,4 +713,73 @@ footer {
   color: var(--color-white);
   padding: 6px;
   border-radius: 5px;
+}
+
+/*     */
+.feature--footer-section {
+  color: var(--color-light-gray);
+  display: block;
+  height: 25rem;
+}
+
+.main-div {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.main-div::after {
+  content: "";
+  position: absolute;
+  width: 72.125rem;
+  height: 0.0625rem;
+  bottom: 0;
+  right: 19%;
+  background: #ececec;
+}
+
+.footer-logo {
+  max-width: 9.68144rem;
+  height: 2.59863rem;
+}
+
+.footer__description--1 {
+  padding-top: 1.8rem;
+  max-width: 16.625rem;
+}
+
+.footer__description--2 {
+  width: 11.9375rem;
+}
+
+.footer-title {
+  color: #2e2e2e;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding-bottom: 1.8rem;
+}
+
+.same ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+
+.footer-last {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.last-child {
+  position: absolute;
+}
+
+.item-2 {
+  margin-left: 108rem;
+}
+
+.item-1 {
+  margin-left: 95rem;
 }
