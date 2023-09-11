@@ -510,14 +510,64 @@ footer {
 
 .delivery__content {
   text-align: center;
+  padding-top: 6.3rem;
+}
+
+.delivery__content .feature__subtitle {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.delivery__content .feature__title {
+  color: #2e2e2e;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 39rem;
+  display: inline-block;
 }
 
 .delivery__card {
   display: flex;
-  justify-content: space-evenly;
   text-align: center;
+  gap: 4rem;
+  padding-top: 2rem;
+  justify-content: center;
 }
 
+.card {
+  background-color: var(--color-white);
+  max-width: 18rem;
+  height: 19rem;
+}
+
+.delivery__card--image {
+  max-width: 6.25rem;
+  height: 3.62738rem;
+  display: inline-block;
+  margin: 3rem 6rem;
+}
+
+.card-image--3 {
+  max-width: 5.56919rem;
+  height: 5.30431rem;
+}
+
+.card-title {
+  color: #2e2e2e;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.card-description {
+  color: #676767;
+  font-size: 0.875rem;
+  font-weight: 400;
+  max-width: 17rem;
+  padding: 0.8rem 0 0 0;
+  margin: 0 1.5rem;
+}
 /* =============== features section =============== */
 
 .feature__image-box {
